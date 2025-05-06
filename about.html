@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-commerce</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a class="active" a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome To Quick Kart</h1>
+            <p>Discover amazing stationary products at great prices</p>
+            <p>Shop now and enjoy exclusive discounts!</p>
+            <button class="cta-button" onclick="window.location.href='shop.html'">Shop Now</button>
+           
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Free Shipping</h3>
+            <p>On orders over ₹399</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-undo"></i>
+            <h3>Easy Returns</h3>
+            <p>02-day return policy</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>Support</h3>
+            <p>Always here to help you</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="products/1st Trophy.png" alt="Decorations">
+                <h3>Decorations Item</h3>
+            </div>
+            <div class="category-card">
+                <img src="products/blue pot ink.png" alt="Drawing">
+                <h3>Drawing Item</h3>
+            </div>
+            <div class="category-card">
+                <img src="products/office chairs.png" alt="office">
+                <h3>Office Item</h3>
+            </div>
+            <div class="category-card">
+                <img src="products/sandisk pd 64gb.png" alt="Beauty">
+                <h3>Extra Items</h3>
+            </div>
+           
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <script>
+
+            const newsletterForm = document.querySelector('.newsletter-form');
+            newsletterForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                const email = emailInput.value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}!`);
+                    emailInput.value = '';
+                } else {
+                    alert('Please enter a valid email address.');
+                }
+            });
+        </script>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p><b>Vivek Rai (Developers)</b><p>
+                    <p><b>Divyansh (Team-Member)</b><p>
+                        <p><b>Krishika (Team-member)</b><p>
+                            <p><b>Diksha (Team-member)</b><p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.html">Shipping</a></li>
+                    <li><a href="faq.html">Returns</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/login/"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/i/flow/login"><i id="twitter" class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/norafatehi/?hl=en"><i id="instagram" class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCrlCJyhEISXJU1SGYFcFmjA"><i id="yt" class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2025 quick kart-all right reserved
+        </div>
+    </footer>
+  
+    <script src="second.js"></script>
+    <script>
+    
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const navbar = document.getElementById('navbar');
+        if (bar) {
+            bar.addEventListener('click', () => {
+                navbar.classList.add('active');
+            });
+        }
+        if (close) {
+            close.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
