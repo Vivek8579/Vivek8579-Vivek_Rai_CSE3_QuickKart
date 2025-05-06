@@ -12,7 +12,7 @@ https://mellifluous-stardust-b0dc29.netlify.app/
 
 ## 🎥 Video Explanation
 [Watch the walkthrough here](#)  
-> _(Replace `#` with your actual video link)_
+> https://drive.google.com/file/d/164tt75ZBmxwbx5REAZ0bmOgphKWC4Xo8/view?usp=drivesdk
 
 ## 🛠️ Technologies Used
 - **HTML5**
@@ -21,8 +21,4 @@ https://mellifluous-stardust-b0dc29.netlify.app/
 - **Tailwind CSS**
 - **Netlify** (for deployment)
 
-## 🚀 Steps to Run / Execute the Project
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
