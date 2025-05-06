@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Kart Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="header.css">
+   
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        
+        <div>
+            <ul id="navbar">
+               
+
+                <li><a href="home.html">home</a></li>
+                <li><a class = "active" href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+
+    </section>
+
+    <section id="page-header">
+        <h2>#StayAtShop</h2>
+        <H4>#RushHour</H4>
+
+        <p>Welcome to Quick Kart</h2>
+
+
+
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="FeatureBox">
+            <img src="img/f1.png" alt="">
+           <h6> &#8377; 20 Shipping Charges</h6>
+        </div>
+        <div class="FeatureBox">
+            <img src="img/f2.png" alt="">
+           <h6> Fast Delivery</h6>
+        </div>
+        <div class="FeatureBox">
+            <img src="img/f3.png" alt="">
+           <h6> Save Money</h6>
+        </div>
+        <div class="FeatureBox">
+            <img src="img/f4.png" alt="">
+           <h6> promotions</h6>
+        </div>
+        <div class="FeatureBox">
+            <img src="img/f5.png" alt="">
+           <h6> Happy sell</h6>
+        </div>
+        <div class="FeatureBox">
+            <img src="img/f6.png" alt="">
+           <h6> Support</h6>
+        </div>
+
+
+    </section>
+    <section id="product1" class="section-p1">
+        
+        <div class="pro-container">
+            <div class="pro-container">
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/winner1 trophy.png"alt="">
+                <div class="des">
+                    <span>trophy</span>
+                    <h5><b>winner1 trophy</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1000</h4>
+                </div>
+                <a href="#" onclick="addToCart('winner1 trophy', 1000, 'products/winner1 trophy.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/wedding theme.png"alt="">
+                <div class="des">
+                    <span>theme</span>
+                    <h5><b>wedding theme</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 399</h4>
+                </div>
+                <a href="#" onclick="addToCart('wedding theme', 100, 'products/wedding theme.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/wall callender.png"alt="">
+                <div class="des">
+                    <span>wall callender</span>
+                    <h5><b>wall callender</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 249</h4>
+                </div>
+                <a href="#" onclick="addToCart('wall callender', 299, 'products/wall callender.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Tress drawing sheets.png"alt="">
+                <div class="des">
+                    <span>drawing sheets</span>
+                    <h5><b>Tress drawing sheets</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 99</h4>
+                </div>
+                <a href="#" onclick="addToCart('Tress drawing sheets', 99, 'products/Tress drawing sheets.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Acrylic paint set.png" alt="">
+                <div class="des">
+                    <span>Penta</span>
+                    <h5><b>Acrylic paint set</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 327</h4>
+                </div>
+                <a href="#" onclick="addToCart('Acrylic paint set', 327, 'products/Acrylic paint set.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/yellow pencil.png" alt="">
+                <div class="des">
+                    <span>Pencil</span>
+                    <h5><b>Yellow Pencil</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 19</h4>
+                </div>
+                <a href="#" onclick="addToCart('Yellow Pencil', 19, 'products/yellow pencil.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/woody table.png" alt="">
+                <div class="des">
+                    <span>Table</span>
+                    <h5><b>Woody Table</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1699</h4>
+                </div>
+                <a href="#" onclick="addToCart('Woody Table', 1699, 'products/woody table.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/woody cahcoal.png" alt="">
+                <div class="des">
+                    <span>Charcoal</span>
+                    <h5><b>Charcoal for Artists</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 144</h4>
+                </div>
+                <a href="#" onclick="addToCart('Charcoal for Artists', 144, 'products/woody cahcoal.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/winner1 trophy.png" alt="">
+                <div class="des">
+                    <span>Trophy</span>
+                    <h5><b>Winner Trophy</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1000</h4>
+                </div>
+                <a href="#" onclick="addToCart('Winner Trophy', 1000, 'products/winner1 trophy.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/wedding theme.png" alt="">
+                <div class="des">
+                    <span>Theme</span>
+                    <h5><b>Wedding Theme</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 399</h4>
+                </div>
+                <a href="#" onclick="addToCart('Wedding Theme', 399, 'products/wedding theme.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/wall callender.png" alt="">
+                <div class="des">
+                    <span>Calendar</span>
+                    <h5><b>Wall Calendar</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 249</h4>
+                </div>
+                <a href="#" onclick="addToCart('Wall Calendar', 249, 'products/wall callender.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Tress drawing sheets.png" alt="">
+                <div class="des">
+                    <span>Drawing Sheets</span>
+                    <h5><b>Tress Drawing Sheets</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 99</h4>
+                </div>
+                <a href="#" onclick="addToCart('Tress Drawing Sheets', 99, 'products/Tress drawing sheets.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Table Cabinet with 6 drawers.png" alt="">
+                <div class="des">
+                    <span>office table</span>
+                    <h5><b>Table Cabinet with 6 drawers</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 3327</h4>
+                </div>
+                <a href="#" onclick="addToCart('Table Cabinet with 6 drawers', 3327, 'products/Table Cabinet with 6 drawers.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Student choice white board.png" alt="">
+                <div class="des">
+                    <span>white boardspan>
+                    <h5><b>Student choice white board</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1119</h4>
+                </div>
+                <a href="#" onclick="addToCart('Student choice white board', 1119, 'products/Student choice white board.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/steadutler pencil.png" alt="">
+                <div class="des">
+                    <span>pencils</span>
+                    <h5><b>steadutler pencil</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 59</h4>
+                </div>
+                <a href="#" onclick="addToCart('steadutler pencil', 59, 'products/steadutler pencil.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Stationary set.png" alt="">
+                <div class="des">
+                    <span>Stationary set</span>
+                    <h5><b>Stationary set</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 799</h4>
+                </div>
+                <a href="#" onclick="addToCart('Stationary set',799, 'products/Stationary set.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Star school bag.png" alt="">
+                <div class="des">
+                    <span>Star Bag</span>
+                    <h5><b>Star school bag</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 578</h4>
+                </div>
+                <a href="#" onclick="addToCart('Star school bag', 578, 'Star school bag')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/soundmag tws earphones.png" alt="">
+                <div class="des">
+                    <span>soundmag</span>
+                    <h5><b>soundmag tws earphones</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 399</h4>
+                </div>
+                <a href="#" onclick="addToCart('soundmag tws earphones', 399, 'products/soundmag tws earphones.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/sony wired headphones.png" alt="">
+                <div class="des">
+                    <span>sony</span>
+                    <h5><b>sony wired headphones</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1249</h4>
+                </div>
+                <a href="#" onclick="addToCart('sony wired headphones', 1249, 'products/sony wired headphones.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/single stereo speaker.png" alt="">
+                <div class="des">
+                    <span>stereo speaker</span>
+                    <h5><b>single stereo speaker</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1199</h4>
+                </div>
+                <a href="#" onclick="addToCart('single stereo speaker', 1199, 'products/single stereo speaker.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/shri radhe image.png" alt="">
+                <div class="des">
+                    <span>lord images</span>
+                    <h5><b>shri radhe images</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 327</h4>
+                </div>
+                <a href="#" onclick="addToCart('shri radhe image', 327, 'products/shri radhe image.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/sandisk pd 64gb.png" alt="">
+                <div class="des">
+                    <span>sandisk 64GB</span>
+                    <h5><b>sandisk pendrive 64gb</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 499</h4>
+                </div>
+                <a href="#" onclick="addToCart('sandisk pd 64gb', 499, 'products/sandisk pd 64gb.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/sandisk pd 16gb.png" alt="">
+                <div class="des">
+                    <span>Sandisk 16GB</span>
+                    <h5><b>sandisk pd 16gb</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 249</h4>
+                </div>
+                <a href="#" onclick="addToCart('sandisk pd 16gb', 249, 'products/sandisk pd 16gb.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Safry Bags.jpg" alt="">
+                <div class="des">
+                    <span>safari bag</span>
+                    <h5><b>Safari Bags</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 1144</h4>
+                </div>
+                <a href="#" onclick="addToCart('Safry Bags', 1144, 'products/Safry Bags.jpg')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/roland printing.png" alt="">
+                <div class="des">
+                    <span>roland</span>
+                    <h5><b>roland printing</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 184</h4>
+                </div>
+                <a href="#" onclick="addToCart('roland printing', 184, 'products/roland printing.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+           
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/real ballpen.png" alt="">
+                <div class="des">
+                    <span>ballpen</span>
+                    <h5><b>ball pen</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 49</h4>
+                </div>
+                <a href="#" onclick="addToCart('real ballpen', 49, 'products/real ballpen.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/propen gell.png" alt="">
+                <div class="des">
+                    <span>Gel</span>
+                    <h5><b>propen gel</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 99</h4>
+                </div>
+                <a href="#" onclick="addToCart('propen gel', 99, 'products/propen gell.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/premium table cabinet.png" alt="">
+                <div class="des">
+                    <span>premium table</span>
+                    <h5><b>premium table cabinet</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 2327</h4>
+                </div>
+                <a href="#" onclick="addToCart('premium table cabinet', 2327, 'products/premium table cabinet.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/roland printing.png" alt="">
+                <div class="des">
+                    <span>photo printing </span>
+                    <h5><b>roland printing machine</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 9327</h4>
+                </div>
+                <a href="#" onclick="addToCart('roland printing', 9327, 'products/roland printing.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/pngwing.com (96).png" alt="">
+                <div class="des">
+                    <span>special pen</span>
+                    <h5><b>special writing pen</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 247</h4>
+                </div>
+                <a href="#" onclick="addToCart('png pen', 247, 'products/pngwing.com (96).png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/pngwing.com (54).png" alt="">
+                <div class="des">
+                    <span>premium pen</span>
+                    <h5><b>premium writing pen</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 339</h4>
+                </div>
+                <a href="#" onclick="addToCart('premium pen for writing', 339, 'products/pngwing.com (54).png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/plec tissue papers.png" alt="">
+                <div class="des">
+                    <span>tissue papers</span>
+                    <h5><b>tissue papers</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 48</h4>
+                </div>
+                <a href="#" onclick="addToCart('tissue papers', 48, 'products/plec tissue papers.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/zoomin lens.png" alt="">
+                <div class="des">
+                    <span>zoomin</span>
+                    <h5><b>zoomin lens</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 348</h4>
+                </div>
+                <a href="#" onclick="addToCart('zoomin lens', 348, 'products/zoomin lens.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/pharmasept wipes.png" alt="">
+                <div class="des">
+                    <span>pharmasept</span>
+                    <h5><b>pharmasept</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 175</h4>
+                </div>
+                <a href="#" onclick="addToCart('pharmasept', 175, 'products/pharmasept wipes.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Pentrel wightner.png" alt="">
+                <div class="des">
+                    <span>pentral</span>
+                    <h5><b>Pentrel wightner</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 148</h4>
+                </div>
+                <a href="#" onclick="addToCart('Pentrel wightner', 148, 'products/Pentrel wightner.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/pentel.png" alt="">
+                <div class="des">
+                    <span>pentel</span>
+                    <h5><b>pentel pen</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 119</h4>
+                </div>
+                <a href="#" onclick="addToCart('pentel pen', 119, 'products/pentel.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Pelican stamp pad.png" alt="">
+                <div class="des">
+                    <span>pelican</span>
+                    <h5><b>Pelican stamp pad</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 248</h4>
+                </div>
+                <a href="#" onclick="addToCart('Pelican stamp pad', 248, 'products/Pelican stamp pad.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Pelican blanco.png" alt="">
+                <div class="des">
+                    <span>pelicna</span>
+                    <h5><b>Pelican blanco</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 348</h4>
+                </div>
+                <a href="#" onclick="addToCart('Pelican blanco', 348, 'products/Pelican blanco.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/Paints Canvas.png" alt="">
+                <div class="des">
+                    <span>paint canvas</span>
+                    <h5><b>Paints Canvas</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 222</h4>
+                </div>
+                <a href="#" onclick="addToCart('Paints Canvas', 222, 'products/Paints Canvas.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="pro" onclick="window.location.href='cart.html'">
+                <img src="products/original graphite.png" alt="">
+                <div class="des">
+                    <span>graphite</span>
+                    <h5><b>original graphite</b></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>&#8377; 248</h4>
+                </div>
+                <a href="#" onclick="addToCart('original graphite', 248, 'products/original graphite.png')">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>  
+    </section>  
+
+
+             <!--pagination section start from here-->
+   <section id="pagination" class="section-p1">
+    <a class = "active"  a href="shop.html">1</a>
+    <a href="shop2.html">2</a>
+    <a href="shop3.html">3</a>
+    
+    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+    
+       
+   </section>
+    <section>
+        <div class="banner-container">
+            <div class="banner-content">
+                <p>Welcome to Quick Kart! Enjoy browsing our latest products!</p>
+                <p>Don't forget to check out our new collections!</p>
+                <p>Exclusive deals only available today! Hurry up!</p>
+                <p>Free shipping on orders over rs 500! Shop now!</p>
+            </div>
+        </div>
+    </section>
+
+   
+    
+    <section id="newslater" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get Email Update About Products And <span> Special Offres</span></p>
+            <h2><span class="quick">Quick</span><span class="kart">Kart</span></h2>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Id:">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <section id="color-stripe">
+        <p>Welcome to Quick Kart! Enjoy browsing our latest products!</p>
+    </section>
+        <script>
+            const form = document.querySelector('.form');
+            const input = document.querySelector('input[type="text"]');
+            const button = document.querySelector('.normal');
+
+            button.addEventListener('click', function() {
+                const email = input.value;
+                if (email) {
+                    alert(`Thank you for signing up with ${email}!`);
+                    input.value = ''; // Clear the input field
+                } else {
+                    alert('Please enter a valid email address.');
+                }
+            });
+        </script>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" class="footerlogo" alt="website logo">
+            <h4 class="green1">Contacts</h4>
+            <p><strong class="green">Address: </strong>kaushik stationary | sohna (HARYANA) 122102</p>
+            <p><strong class="green">phone: </strong>8579919011 | 7070561681</p>
+            <p><strong class="green">Hours: </strong>10:00 am - 8:00 pm</p>
+            <p class="animation">evry stationary products are avilable at genuine price</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/login/"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/i/flow/login"><i id="twitter" class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/norafatehi/?hl=en"><i id="instagram" class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCrlCJyhEISXJU1SGYFcFmjA"><i id="yt" class="fab fa-youtube"></i></a>
+                    <a href="https://www.quora.com/"><i id="quora" class="fab fa-quora"></i></a>
+                    <i class="fab fa-linekdin-l"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About us</h4>
+            <a href="about.html">About us </a>
+            <a href="faq.html">Delivery Information</a>
+            <a href="faq.html">Privacy policy</a>
+            <a href="faq.html">Term & conditions</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="login/login.html">Sign in </a>
+            <a href="cart.html">My cart</a>
+            <a href="cart.html">My wishlist</a>
+            <a href="faq.html">Track order</a>
+            <a href="faq.html">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From app store or google play store</p>
+            <div class="row">
+                <a href="https://www.apple.com/in/app-store/"> <img src="img/social/app.jpg"  alt="ios store" ></a>
+                <a href="https://play.google.com/store/apps?hl=en_IN"><img src="img/social/play.jpg" alt="play store"></a>
+            </div>
+            <p>secured payment gateways</p>
+            <img src="img/social/pay.png" alt="payemnt gateways">
+        </div>
+
+        <div class="copyright">
+            Copyright &copy; 2025 quick kart-all right reserved
+        </div>
+    </footer>  
+<script src="cart.js"></script>
+<script src="first.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Your Store Name</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+            
+            <div>
+                <ul id="navbar">
+                    
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a class = "active" href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+    
+    
+        </section>
+    </header>
+    <section class="faq-hero">
+        <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <div class="search-container">
+                <input type="text" id="faqSearch" placeholder="Search your question...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="animated-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="shipping">Shipping</button>
+            <button class="tab-btn" data-category="payment">Payment</button>
+            <button class="tab-btn" data-category="returns">Returns</button>
+            <button class="tab-btn" data-category="product">Product</button>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-container">
+        <div class="faq-group" data-category="shipping">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long does shipping take?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Standard shipping typically takes 3-5 business days within the continental US. International shipping may take 7-14 business days depending on the destination.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-group" data-category="payment">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What payment methods do you accept?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-group" data-category="order status">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I track my order?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Once your order has shipped, you will receive a tracking number via email. You can use this number to track your order on our website.</p>
+                </div>   
+        </div>
+
+
+        <div>
+            <div class="faq-group" data-category="returns">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your return policy?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 03-day return policy. If you are not satisfied with your purchase, you can return it within 30 days for a full refund.</p>
+                </div>
+        </div>
+        <div>
+            <div class="faq-group" data-category="product">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer product warranties?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer a one-year warranty on all our products. If you experience any issues, please contact our support team for assistance.</p>
+                </div>
+        </div>
+        <div>
+            <div class="faq-group" data-category="shipping">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I change my shipping address after placing an order?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can change your shipping address within 2 hours of placing your order. Please contact our customer service team for assistance.</p>
+                </div>
+        </div>
+        <div>
+
+            <div class="faq-group" data-category="payment">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I use multiple payment methods for one order?</h3>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>No, we only accept one payment method per order. If you want to split the payment, you will need to place separate orders.</p>
+                </div>
+        </div>
+        <div>
+                
+                <div class="faq-group" data-category="returns">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I initiate a return?</h3>
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To initiate a return, please contact our customer service team. They will provide you with a return authorization number and instructions on how to return your item.</p>
+                    </div>
+        </div>
+        <div>
+                <div class="faq-group" data-category="product">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your products eco-friendly?</h3>
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we are committed to sustainability and offer a range of eco-friendly products. Look for the eco-friendly label on our product pages.</p>
+                    </div>
+        </div>
+        <div>
+                <div class="faq-group" data-category="shipping">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer international shipping?</h3>
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer international shipping to select countries. Please check our shipping policy for more details.</p>
+                    </div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Need More Help?</h2>
+            <h4>Still have questions?</h4>
+            <p>We're here to help you</p>
+            <button class="contact-btn">Contact Support</button>
+
+
+        </div>
+        <!-- Chat System -->
+<div class="chat-widget">
+    <div class="chat-header">
+        <h4>Quick Kart Support</h4>
+        <button id="closeChat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <div class="chat-message bot">
+            <p>Hello! How can I assist you today?</p>
+        </div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<button class="chat-toggle" id="openChat"><i class="fas fa-comments"></i></button>
+        <script>
+            document.querySelector('.contact-btn').addEventListener('click', function() {
+                window.location.href = 'contact.html'; // Redirect to contact page
+            });
+            // Chat System Functionality
+const chatWidget = document.querySelector('.chat-widget');
+const chatToggle = document.getElementById('openChat');
+const closeChat = document.getElementById('closeChat');
+const chatInput = document.getElementById('chatInput');
+const sendChat = document.getElementById('sendChat');
+const chatBody = document.getElementById('chatBody');
+
+// Toggle Chat Widget
+chatToggle.addEventListener('click', () => {
+    chatWidget.style.display = 'flex';
+    chatToggle.style.display = 'none';
+});
+
+closeChat.addEventListener('click', () => {
+    chatWidget.style.display = 'none';
+    chatToggle.style.display = 'flex';
+});
+
+// Handle Sending Messages
+sendChat.addEventListener('click', () => {
+    const userMessage = chatInput.value.trim();
+    if (userMessage) {
+        addMessage('user', userMessage);
+        chatInput.value = '';
+        setTimeout(() => {
+            addMessage('bot', getBotResponse(userMessage));
+        }, 1000);
+    }
+});
+
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendChat.click();
+    }
+});
+
+// Add Message to Chat
+function addMessage(sender, message) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('chat-message', sender);
+    messageDiv.innerHTML = `<p>${message}</p>`;
+    chatBody.appendChild(messageDiv);
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// Bot Responses
+function getBotResponse(message) {
+    const responses = {
+        hello: 'Hi there! How can I assist you today?',
+        shipping: 'Shipping typically takes 3-5 business days.',
+        order: 'You can track your order using the tracking number sent to your email.',
+        product: 'We offer a variety of products. What are you looking for?',
+        payment: 'We accept Visa, MasterCard, PayPal, and more.',
+        return: 'You can return items within 30 days for a full refund.',
+        support: 'Our support team is here to help you 24/7.',
+        warranty: 'We offer a one-year warranty on all our products.',
+        eco: 'Yes, we are committed to sustainability and offer eco-friendly products.',
+        email: 'You can reach us at vivekrai18th@gmail.com',
+        phone: 'You can call us at +91 8579919011 || 7070561681',
+        address: 'Our office is located at sohna near kr manglam univerrsity.',
+        feedback: 'We value your feedback! Please let us know how we can improve.',
+        thanks: 'You’re welcome! If you have any more questions, feel free to ask.',
+    };
+
+    const lowerMessage = message.toLowerCase();
+    for (const key in responses) {
+        if (lowerMessage.includes(key)) {
+            return responses[key];
+        }
+    }
+    return 'I’m sorry, I didn’t understand that. Can you please rephrase?';
+}
+        </script>
+        <script>
+            let inactivityTimeout;
+
+// Function to show a message after 5 seconds of inactivity
+function showInactivityMessage() {
+    const inactivityMessage = "If you have more questions, feel free to ask!";
+    addMessage('bot', inactivityMessage);
+}
+
+// Reset inactivity timer whenever the user interacts with the chat
+function resetInactivityTimer() {
+    clearTimeout(inactivityTimeout);
+    inactivityTimeout = setTimeout(() => {
+        showInactivityMessage();
+    }, 5000); // 5000ms = 5 seconds
+}
+
+// Update existing event listeners to reset the inactivity timer
+sendChat.addEventListener('click', () => {
+    resetInactivityTimer();
+});
+
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        resetInactivityTimer();
+    }
+});
+
+// Initialize the inactivity timer when the chat starts
+resetInactivityTimer();
+        </script>
+    </section>
+</body>
+<script src="faq.js"></script>
+</html>

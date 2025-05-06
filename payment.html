@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Quick Kart</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main>
+        <section id="payment-section">
+            <h2>Choose Your Payment Method</h2>
+            <div class="payment-methods">
+                <!-- Credit/Debit Card -->
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                    <label for="credit-card">Credit/Debit Card</label>
+                    <div class="payment-details" id="credit-card-details">
+                        <input type="text" placeholder="Card Number" required>
+                        <input type="text" placeholder="Cardholder Name" required>
+                        <input type="text" placeholder="MM/YY" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+                </div>
+
+                <!-- UPI -->
+                <div class="payment-option">
+                    <input type="radio" id="upi" name="payment-method" value="upi">
+                    <label for="upi">UPI</label>
+                    <div class="payment-details" id="upi-details">
+                        <p>UPI ID: <strong>vivekrai18th@ybl</strong></p>
+                        <input type="text" placeholder="Enter Your UPI ID" required>
+                    </div>
+                </div>
+
+                <!-- Net Banking -->
+                <div class="payment-option">
+                    <input type="radio" id="net-banking" name="payment-method" value="net-banking">
+                    <label for="net-banking">Net Banking</label>
+                    <div class="payment-details" id="net-banking-details">
+                        <select>
+                            <option value="">Select Bank</option>
+                            <option value="sbi">State Bank of India</option>
+                            <option value="hdfc">HDFC Bank</option>
+                            <option value="icici">ICICI Bank</option>
+                            <option value="axis">Axis Bank</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Cash on Delivery -->
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment-method" value="cod">
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+            </div>
+
+            <button id="pay-now-btn">Pay Now</button>
+        </section>
+    </main>
+
+    <script src="payment.js"></script>
+</body>
+</html>

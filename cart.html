@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Quick Kart</title>
+    <link rel="stylesheet" href="header.css">
+    
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+                
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+    <header>
+        <h1>Quick Kart</h1>
+    </header>
+    <main>
+        <section id="cart-section">
+            <h2>My Cart</h2>
+            <div id="cart-container"></div>
+            <div id="cart-summary">
+                <h3>Price Details</h3>
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: ₹<span id="total-price">0</span></p>
+                <button id="checkout-btn" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
+                <button id="continue-shopping-btn" onclick="window.location.href='shop.html'">Continue Shopping</button>
+            </div>
+           
+            <div id="checkoutModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModal">&times;</span>
+                    <h2>Thank You for Your Order!</h2>
+                    <p>Your order has been successfully placed.</p>
+                    <p><strong>Tracking ID:</strong> <span id="trackingId"></span></p>
+                    <p><strong>Estimated Delivery:</strong> 3-4 business days</p>
+                    <p>We appreciate your trust in Quick Kart. You can track your order in the "My Orders" section.</p>
+                    <button id="trackOrderBtn">Track Order</button>
+                </div>
+            </div>
+                        
+
+                   
+        </section>
+        <section id="saved-section">
+            <h2>Saved for Later</h2>
+            <div id="saved-container"></div>
+        </section>
+        <footer>
+            <div class="copyright">
+                Copyright &copy; 2025 quick kart-all right reserved
+            </div>
+        </footer>
+<script>
+function loadCartItems() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartContainer = document.getElementById('cart-container');
+    const totalItems = document.getElementById('total-items');
+    const totalPrice = document.getElementById('total-price');
+
+    cartContainer.innerHTML = '';
+
+    if (cartItems.length === 0) {
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+        totalItems.textContent = 0;
+        totalPrice.textContent = 0;
+        return;
+    }
+
+    let total = 0;
+
+    cartItems.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+            <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <p>Price: ₹${item.price}</p>
+                <p>Quantity: ${item.quantity}</p>
+                <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
+                <button class="save-btn" onclick="saveForLater(${index})">Save for Later</button>
+            </div>
+        `;
+        cartContainer.appendChild(cartItem);
+
+        total += item.price * item.quantity;
+    });
+
+    totalItems.textContent = cartItems.length;
+    totalPrice.textContent = total;
+}
+
+// Function to remove an item from the cart
+function removeFromCart(index) {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.splice(index, 1);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    loadCartItems();
+}
+
+// Function to save an item for later
+function saveForLater(index) {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+
+    // Move the item from cart to saved for later
+    const item = cartItems.splice(index, 1)[0];
+    savedItems.push(item);
+
+    // Update localStorage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('savedItems', JSON.stringify(savedItems));
+
+    // Reload the cart and saved items
+    loadCartItems();
+    loadSavedItems();
+}
+
+// Function to load saved items
+function loadSavedItems() {
+    const savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+    const savedContainer = document.getElementById('saved-container');
+
+    savedContainer.innerHTML = '';
+
+    if (savedItems.length === 0) {
+        savedContainer.innerHTML = '<p>No items saved for later.</p>';
+        return;
+    }
+
+    savedItems.forEach((item, index) => {
+        const savedItem = document.createElement('div');
+        savedItem.classList.add('saved-item');
+        savedItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="saved-item-image">
+            <div class="saved-item-details">
+                <h4>${item.name}</h4>
+                <p>Price: ₹${item.price}</p>
+                <button class="remove-btn" onclick="removeFromSaved(${index})">Remove</button>
+                <button class="move-btn" onclick="moveToCart(${index})">Move to Cart</button>
+            </div>
+        `;
+        savedContainer.appendChild(savedItem);
+    });
+}
+
+// Function to remove an item from saved for later
+function removeFromSaved(index) {
+    const savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+    savedItems.splice(index, 1);
+    localStorage.setItem('savedItems', JSON.stringify(savedItems));
+    loadSavedItems();
+}
+
+// Function to move an item back to the cart
+function moveToCart(index) {
+    const savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Move the item from saved for later to cart
+    const item = savedItems.splice(index, 1)[0];
+    cartItems.push(item);
+
+    // Update localStorage
+    localStorage.setItem('savedItems', JSON.stringify(savedItems));
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    // Reload the cart and saved items
+    loadCartItems();
+    loadSavedItems();
+}
+
+// Load cart and saved items on page load
+window.onload = function () {
+    loadCartItems();
+    loadSavedItems();
+};
+</script>       
+    <script src="cart.js"></script>
+    <script src="myorder.js"></script>
+</body>
+</html>
